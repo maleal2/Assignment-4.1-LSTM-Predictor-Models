@@ -1,22 +1,42 @@
-# Long Short Term Memory Networks for IoT Prediction
+# maleal2-Assignment_4_1_for_Module_4_in_AAI_530_Data_Analytics_and_the_Internet_of_Things_MariaLealCardenas02042024
+Assignment 4.1: Long Short Term Memory Networks for IoT Prediction - USD
 
-IoT applications are often based on time series data collected by the sensors in the IoT system. This means that the best deep learning models will often be designed with sequential data in mind, such as RNNs and LSTMs. In this assignment you will build an LSTM predictor using the household electricity consumption data from the previous two assignments to once again predict the Global Active Power usage based on simulated streaming data. You will be guided to build a simple model and then you will propose and implement changes to the model and analyze the effect that your changes have on the model's performance.
+# Household Electric Consumption Dataset. 
+This assignment is a part of the AAI-530 course in the Applied Artificial Intelligence Program at the University of San Diego (USD). 
+Assignment Status: [Completed]
 
-### Instructions: 
+## Installation
+To use this project, first clone the repo on your device using the below command:
+git clone https://github.com/maleal2/Assignment-3.1-Linear-Regression-for-IoT.git
 
-1. Create a repository under your GitHub account from this template: https://github.com/amarbut/aai-iot-lstm. Instructions can be found [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template). Make your repository [private](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility) and add your instructor’s Github account as a [collaborator](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). 
+## Project Introduction
+This dataset contains 2075259 measurements gathered in a house located in Sceaux (7km of Paris, France) between December 2006 and November 2010 (47 months).
+Notes: 
+1.(global_active_power*1000/60 - sub_metering_1 - sub_metering_2 - sub_metering_3) represents the active energy consumed every minute (in watt hour) in the household by electrical equipment not measured in sub-meterings 1, 2 and 3.
+2.The dataset contains some missing values in the measurements (nearly 1,25% of the rows). All calendar timestamps are present in the dataset but for some timestamps, the measurement values are missing: a missing value is represented by the absence of value between two consecutive semi-colon attribute separators. For instance, the dataset shows missing values on April 28, 2007.
 
-2. Following the instructions in the jupyter notebook from the above Github template, build an LSTM model to predict Global Active Power.
+## Contributors
+1.	Maria Carolina Leal Cardenas
+   
+## Methods Used
+1. Basic Data cleaning inspection.
+2. Long Short Term Memory RNNs ( Recurral Neural Networks ). 
+3. Long Short Term Memory with Sequal layers.
+4. Mean Squared Error ( MSE ).
+5. R-2 squared. 
 
-3. In the sections provided in the jupyter notebook, make changes to the original LSTM model that you think will improve its performance.
+## Technologies
+   Python
+   
+## Project Description
+Data source: (https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumptio)
+Name of the variables: Date	Time,	Global_active_power	,Global_reactive_power	,Voltage	Global_intensity	,Sub_metering_1	,Sub_metering_2, and	Sub_metering_3.
 
-4. Answer all questions as prompted in the jupyter notebook to analyze the performance of your models, the effects that your changes have on the predictions, and compare these models to the linear regression that you built in the previous assignment.
+Number of variables: 9
 
+Size of the dataset:  2075259 
 
+Used Descriptive Analysis, Long Short Term Memory RRNs. 
 
-Assignment Materials:
-* [LSTM Prediction Repository](https://github.com/amarbut/aai-iot-lstm)
-
-Deliverables:
-* When you have finished your code, print your notebook as a PDF and upload it to Blackboard. 
-* Commit your code and push the changes to GitHub so your instructor has access to the ipynb notebook files and any other code you create.
+## Acknowledgments
+Thank you Professor An Tran and Professor Anna Marbut for your excellent  class. 
